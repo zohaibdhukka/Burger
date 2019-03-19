@@ -21,5 +21,5 @@ var routes = require("./controllers/burgers_controller.js");
 app.use("/",routes);
 
 // Start our server so that it can begin listening to client requests.
-var port = 3000
+var port = process.env.PORT || 3000
 app.listen(port);
